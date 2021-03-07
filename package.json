@@ -1,0 +1,18 @@
+{
+  "name": "snowpack-ejs-plugin",
+  "version": "0.1.0",
+  "description": "Add support for the EJS template engine to Snowpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "EJS",
+    "Snowpack"
+  ],
+  "author": "",
+  "license": "LGPL-2.0",
+  "dependencies": {
+    "ejs": "^3.1.6"
+  }
+}
