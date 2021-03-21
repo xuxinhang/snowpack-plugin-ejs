@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: justify;
+  background: #303030;
+  /* font-family: "Lato", arial, sans-serif; */
+}
+
+a {
+  color: #5e7a00;
+  text-decoration: underline 2px dotted currentColor;
+}
+
+
+h1 {
+  color: #3f5010;
+}
+
+h2, h3 {
+  color: #607026;
+}
+
+.nav {
+  height: 3.6rem;
+  width: 45rem;
+  margin: 2rem auto 0;
+  background: #90a93a;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.08));
+  color: #f0f0f0;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.nav-heading {
+  float: left;
+  padding: 0.3rem 0;
+  margin: 0 3rem 0 1rem;
+  font-size: 2em;
+  line-height: 3rem;
+  font-family: monospace;
+}
+
+.nav-menu {
+  float: right;
+  margin: 0 0.6rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu li {
+  float: left;
+  min-width: 3rem;
+  padding: 1.3rem 0.6rem;
+  line-height: 1rem;
+  height: 1rem;
+}
+
+.nav-menu li a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1.3rem 0.6rem;
+  min-width: 3rem;
+}
+
+.nav-menu li:hover {
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  text-decoration: 1px underline solid;
+}
+
+.body {
+  width: 45rem;
+  background: #fff;
+  padding: 1.6rem 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 45rem;
+  margin: 0 auto 2rem;
+  box-sizing: border-box;
+  background: #3f4a19;
+  border-radius: 0 0 0.6rem 0.6rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.footer-container {
+  font-size: 0.8em;
+  padding: 0.6rem;
+}
+
+.footer-container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer-greeting {
+  float: left;
+}
+
+.footer-site-info {
+  float: right;
+}
+
+.footer-site-info time {
+  font-style: oblique;
+}
