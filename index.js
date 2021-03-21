@@ -4,7 +4,7 @@ const ejs_default = require('ejs');
 
 
 const computeOptionValue = (opt, that, ...args) =>
-  typeof x === 'function' ? opt.call(that, ...args) : opt;
+  typeof opt === 'function' ? opt.call(that, ...args) : opt;
 
 const getAbsolutePath = x => path.isAbsolute(x) ? path.normalize(x) : path.join(process.cwd(), x);
 
