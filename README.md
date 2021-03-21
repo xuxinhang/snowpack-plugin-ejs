@@ -61,7 +61,7 @@ module.exports = {
 };
 ```
 
-### `renderOptions`
+#### `renderOptions`
 
 `Object` | `Function`: *optional*
 
@@ -69,7 +69,7 @@ Provide options which EJS renderer uses. See [EJS's document](https://ejs.co/#do
 
 A function can also be provided, whose first argument is same to that of Snowpack's `load` hook.
 
-### `renderData`
+#### `renderData`
 
 `Object` | `Function`: *optional*
 
