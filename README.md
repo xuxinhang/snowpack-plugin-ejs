@@ -48,7 +48,7 @@ There is [an example](./example/snowpack.config.js) about how to use `snowpack-p
 
 Assign this option to use your own ejs module.
 
-This option can be useful when you have to rewrite some members of ejs module.
+This option would be useful when you have to rewrite some members of ejs module.
 
 ```javascript
 let ejs = require('ejs'),
@@ -65,14 +65,29 @@ module.exports = {
 
 `Object` | `Function`: *optional*
 
-Provide options which EJS renderer uses. See [EJS's document](https://ejs.co/#docs) for details.
-
-A function can also be provided, whose first argument is same to that of Snowpack's `load` hook.
+Provide options which EJS renderer uses. See [EJS's document](https://ejs.co/#docs) for all acceptable items.
+```js
+{  
+  renderOptions: { rmWhitespace: true },
+}
+```
+A function can also be provided, whose first argument is same to that of [Snowpack's `load` hook](https://www.snowpack.dev/guides/plugins#example%3A-build-from-source). This function should return the actually option value.
+```js
+{  
+  renderOptions: ({ filePath }) => ({
+    delimiter: filePath.includes('.obs.ejs') ? '?' : undefined,
+  }),
+}
+```
 
 #### `renderData`
 
 `Object` | `Function`: *optional*
 
-Use assigned data to render templates.
-
-A function can also be provided, whose first argument is same to that of Snowpack's `load` hook.
+Assign data to render templates. The data will only be passed to the *root* template, that is, the data cannot inject into the *included* templates.
+```js
+{
+  renderData: { nickname: 'Calf' },
+}
+```
+A function can also be provided, whose first argument is same to that of [Snowpack's `load` hook](https://www.snowpack.dev/guides/plugins#example%3A-build-from-source). This function should return the actually option value.
