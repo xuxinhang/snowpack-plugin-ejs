@@ -1,6 +1,6 @@
 {
   "name": "snowpack-plugin-ejs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Add support for the EJS template engine to Snowpack.",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/xuxinhang/snowpack-plugin-ejs"
   },
-  "license": "LGPL-2.1",
+  "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.6"
   },
